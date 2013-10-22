@@ -52,7 +52,7 @@ If you have any problem or conflict try to disable the plugin and see if the pro
 
 
 = Where get I get more information about the Delete Multiple Themes? = 
-You can found more information at:<a href="http://happyplugins.com/delete-multiple-themes">HappyPlugin - Delete Multiple Themes</a>
+You can found more information at: <a href="http://happyplugins.com/delete-multiple-themes">HappyPlugin - Delete Multiple Themes</a>
 
 
 == Changelog ==
