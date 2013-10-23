@@ -4,7 +4,7 @@ Tags: Themes Delete, Themes Managment, Multiple Themes Delete
 Donate link: http://happyplugins.com
 Requires at least: 3.0.1
 Tested up to: 3.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,7 +52,7 @@ If you have any problem or conflict try to disable the plugin and see if the pro
 
 
 = Where get I get more information about the Delete Multiple Themes? = 
-You can found more information at:<a href="http://happyplugins.com/delete-multiple-themes">HappyPlugin - Delete Multiple Themes</a>
+You can found more information at: <a href="http://happyplugins.com/delete-multiple-themes">HappyPlugin - Delete Multiple Themes</a>
 
 
 == Changelog ==

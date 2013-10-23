@@ -4,157 +4,201 @@ Plugin Name: Delete Multiple Themes
 Plugin URI: http://happyplugins.com
 Description: Add a registration widget for Wishlist Member.
 Author: HappyPlugins
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://happyplugins.com
 Text Domain: delete-multiple-themes
 */
 
 
-class DeleteMultipleThemes {
-
-function __construct()
+class DeleteMultipleThemes
 {
 
-
-    add_action('admin_menu', array($this, 'add_menu'));
-    add_action('admin_init', array($this, 'delete_themes'));
-
-}
+    function __construct()
+    {
 
 
-function add_menu()
-{
+        add_action('admin_menu', array($this, 'add_menu'));
+        add_action('admin_init', array($this, 'delete_themes'));
 
-    add_theme_page( "Delete Multiple Themes", "Delete Themes", 'manage_options', 'delete-themes', array ($this, 'display_themes'));
-}
-
-
-function display_themes (){
-/* Display Theme Table */
-$themes = wp_get_themes();
-$current_theme = wp_get_theme();
+    }
 
 
+    function add_menu()
+    {
+
+        add_theme_page("Delete Multiple Themes", "Delete Themes", 'manage_options', 'delete-themes', array($this, 'display_themes'));
+    }
 
 
-?>
-    <div class="wrap">
-        <div id="icon-options-general" class="icon32"><br></div>
-    <h2>Delete Multiple Themes</h2>
-        <br>
-<div style="width:65%">
-    <p>Choose the themes you want to delete and the button to delete them. After your delete the themes you can restore them so choose your steps carefully.</p>
-<form method="post">
-<table class="wp-list-table widefat fixed posts" >
-	<thead >
-		<tr >
-            <th class="check-column"><?php _e('&nbsp;', 'pippinw'); ?></th>
-			<th ><?php _e('Name', 'pippinw'); ?></th>
-            <th ><?php _e('Parent', 'pippinw'); ?></th>
-            <th ><?php _e('Author', 'pippinw'); ?></th>
-            <th><?php _e('Version', 'pippinw'); ?></th>
-            <th><?php _e('Path', 'pippinw'); ?></th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-    <th class="check-column"><?php _e('&nbsp;', 'pippinw'); ?></th>
-    <th ><?php _e('Name', 'pippinw'); ?></th>
-    <th ><?php _e('Parent', 'pippinw'); ?></th>
-    <th ><?php _e('Author', 'pippinw'); ?></th>
+    function display_themes()
+    {
 
-    <th><?php _e('Version', 'pippinw'); ?></th>
-    <th><?php _e('Path', 'pippinw'); ?></th>
-</tr>
-</tfoot>
-<tbody class="the-list">
-<?php
+        /* Display Theme Table */
+        $themes = wp_get_themes();
+        $current_theme = wp_get_theme();
 
-    foreach ($themes as $row) : ?>
-        <tr>
+        foreach ($themes as $theme) {
 
-            <th scope="row" class="check-column">
-                <?php  if ($current_theme->stylesheet!=$row->stylesheet) { ?>
+            if ($theme->parent_theme) {
+                $parents[] = $theme->parent_theme;
+            }
+        }
 
-                    <input type="checkbox" name="theme[]" value='<?php echo $row->stylesheet;?>' />
+        ?>
+        <div class="wrap">
+            <div id="icon-themes" class="icon32"><br></div>
+            <h2>Delete Multiple Themes</h2>
+            <br>
 
-            <?php } ?>
+            <div style="width:70%;  float:left;">
+                <p>Choose the themes you want to delete and click on the button to delete them. After you delete the themes you
+                    can not restore them so choose your steps carefully.</p>
+
+                <p>If you choose to delete a theme that has child themes, all of the child themes will be deactivated and
+                    you will not be able to use them.</p>
+                <br>
+
+                <form method="post">
+                    <table class="wp-list-table widefat fixed posts">
+                        <thead>
+                        <tr>
+                            <th class="check-column"><?php _e('&nbsp;', 'pippinw'); ?></th>
+                            <th><?php _e('Name', 'pippinw'); ?></th>
+                            <th><?php _e('Parent', 'pippinw'); ?></th>
+                            <th><?php _e('Author', 'pippinw'); ?></th>
+                            <th><?php _e('Version', 'pippinw'); ?></th>
+                            <th><?php _e('Path', 'pippinw'); ?></th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <th class="check-column"><?php _e('&nbsp;', 'pippinw'); ?></th>
+                            <th><?php _e('Name', 'pippinw'); ?></th>
+                            <th><?php _e('Parent', 'pippinw'); ?></th>
+                            <th><?php _e('Author', 'pippinw'); ?></th>
+                            <th><?php _e('Version', 'pippinw'); ?></th>
+                            <th><?php _e('Path', 'pippinw'); ?></th>
+                        </tr>
+                        </tfoot>
+                        <tbody class="the-list">
+                        <?php
+
+                        foreach ($themes as $row) : ?>
+                            <tr>
+
+                                <th scope="row" class="check-column">
+                                    <?php if ($current_theme->stylesheet != $row->stylesheet) { ?>
+
+                                        <input type="checkbox" name="theme[]" value='<?php echo $row->stylesheet; ?>'/>
+
+                                    <?php } ?>
 
 
-            </th>
-            <td><?php echo $row->name; ?> <?php  if ($current_theme->stylesheet==$row->stylesheet) { echo "(Current Theme)";} ?></td>
-            <td><?php echo $row->parent_theme; ?></td>
-            <td><?php echo $row->author; ?></td>
-            <td><?php echo $row->version; ?></td>
-            <td><?php echo $row->template; ?></td>
-        </tr>
-    <?php
-    endforeach; ?>
+                                </th>
+                                <td><?php echo $row->name; ?>
+                                    <?php
+                                    if ($current_theme->stylesheet == $row->stylesheet) {
+                                        echo '<br><span style="color:green;">(Current Theme)</span>';
+                                    }
+                                    if (in_array($row->name, $parents)) {
+                                        echo '<br><span style="color:orange;">Has Child Themes</span>';
+                                    }
 
-</tbody>
-</table>
-    <br/>
+                                    ?></td>
+                                <td><?php echo $row->parent_theme; ?></td>
+                                <td><?php echo $row->author; ?></td>
+                                <td><?php echo $row->version; ?></td>
+                                <td><?php echo $row->template; ?></td>
+                            </tr>
+                        <?php
+                        endforeach; ?>
 
-    <?php wp_nonce_field('delete_multiple_themes','themes_delete'); ?>
-<input type="submit" class="primary" value="Delete Themes" onclick="return confirm( 'You are about to delete all of the selected themes \'Cancel\' to stop, \'OK\' to delete.' );">
+                        </tbody>
+                    </table>
+                    <br/><br/><br/>
+
+                    <?php wp_nonce_field('delete_multiple_themes', 'themes_delete'); ?>
+                    <input type="submit" class="primary" value="Delete Themes"
+                           onclick="return confirm( 'You are about to delete all of the selected themes \'Cancel\' to stop, \'OK\' to delete.' );">
 
 
+                </form>
+            </div>
 
-</form>
-    </div>
+            <div style="border: 1px solid #cdcdcd; padding: 18px; width: 25%; float:right;">
+                <a href="http://happyplugins.com" target="_blank"><img
+                        src="<?php echo plugins_url("/images/happyplugins-logo.png", __FILE__); ?>" width="180"/></a>
+                <hr>
+                <div>
+                    <a href="http://store.happyplugins.com"/>
 
-        <div style="border: 1px solid #cdcdcd; padding: 20px; width: 30%; float:right;">
-        <a href="http://happyplugins.com" target="_blank"><img src="<?php echo plugins_url ("/images/happyplugins-logo.png" ,__FILE__); ?>" width="160"/></a>
+                    <h3>The Store</h3></a>
+                    <p>Find unique WordPress plugins on our plugins store. We have designed and developed hundreds of
+                        custom plugins and solutions for customers. We are selling the best of on our store.</p>
+                </div>
+                <div>
+                    <a href="http://happyplugins.com"/>
 
-        <p>For more plugin visit our plugin store at:<a href="http://store.happyplugins.com"/>http://store.happyplugins.com</a></p>
-        <p>if you are interested in out work you can read more our blog</p>
+                    <h3>The Blog</h3></a>
+                    <p>Interested in our work or do you want to improve your WordPress development skills? check our blog
+                        We publish unique prescriptive and sample codes from our plugins.</p>
+                </div>
+                <div>
+                    <a href="http://happyplugins.com/get-a-quote"/>
 
-         </div>
-        <div>
+                    <h3>The Service</h3></a>
+                    <p>Looking for a special solution for WordPress, one that will be the missing puzzle piece
+                        on your website? Send us your request and we promise to return to you no later than 72
+                        hours.</p>
+                </div>
 
-            <?php // echo  file_get_contents("http://google.com"); ?>
 
+            </div>
+            <div>
+
+                <?php // echo  file_get_contents("http://google.com"); ?>
+
+
+            </div>
 
         </div>
 
-    </div>
+    <?php
 
-<?php
-
- }
+    }
 
 
-function delete_themes (){
-/* Precess and Delete Themes */
-
-    /* Check Security */
-
-    if ( isset($_POST['themes_delete']) && wp_verify_nonce($_POST['themes_delete'],'delete_multiple_themes') )
+    function delete_themes()
     {
+        /* Precess and Delete Themes */
 
-    $themes_delete = $_POST['theme'];
+        /* Check Security */
 
+        if (isset($_POST['themes_delete']) && wp_verify_nonce($_POST['themes_delete'], 'delete_multiple_themes')) {
 
-    if (!function_exists('delete_theme')) {
-
-
-        require_once( ABSPATH . WPINC .  '/pluggable.php' );
-        require_once( ABSPATH . 'wp-admin/includes/file.php' );
-        require_once( ABSPATH . 'wp-admin/includes/theme.php' );
-
-    }
-
-    foreach ($themes_delete as $theme) {
-
-            delete_theme ($theme);
-
-    }
+            $themes_delete = $_POST['theme'];
 
 
-}
+            if (!function_exists('delete_theme')) {
+                require_once(ABSPATH . WPINC . '/pluggable.php');
+                require_once(ABSPATH . 'wp-admin/includes/file.php');
+                require_once(ABSPATH . 'wp-admin/includes/theme.php');
+            }
 
-} // End Check
-}
+            foreach ($themes_delete as $theme) {
+                delete_theme($theme);
+            }
 
-$deleteMultiple = new DeleteMultipleThemes();
+        }
+
+    } // End Function
+
+} // End Class
+
+
+
+/* Init DeleteMultipleThemes Class */
+
+    $deleteMultiple = new DeleteMultipleThemes();
+
 ?>
