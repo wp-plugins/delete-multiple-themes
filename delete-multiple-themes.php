@@ -43,7 +43,7 @@ $current_theme = wp_get_theme();
     <h2>Delete Multiple Themes</h2>
         <br>
 <div style="width:65%">
-    <p>Choose the themes you want to delete and the button to delete them. After your delete the themes you can restore them so choose your steps carefully.</p>
+    <p>Choose the themes you want to delete and click on the button to delete them. After your delete the themes you can not restore them so choose your steps carefully.</p>
 <form method="post">
 <table class="wp-list-table widefat fixed posts" >
 	<thead >
