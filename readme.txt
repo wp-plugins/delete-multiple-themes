@@ -58,7 +58,11 @@ You can found more information at: <a href="http://happyplugins.com/delete-multi
 == Changelog ==
 = 1.0.0 =
 * Initial release.
+= 1.0.1 =
+* Update code to display child themes in a better way
+
+
 
 == Upgrade Notice ==
-= 1.0.0 =
+= 1.0.1 =
 * Initial release.
