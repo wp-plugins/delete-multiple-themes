@@ -69,5 +69,6 @@ You can found more information at: <a href="http://happyplugins.com/delete-multi
 
 
 == Upgrade Notice ==
-= 1.0.2 =
-* Update code to Wordpress 3.7.1 changes
+= 1.0.4 =
+* Fix CSS layout for RTL languages
+* Clean code and add security tokens
