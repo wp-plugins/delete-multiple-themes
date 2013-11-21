@@ -3,7 +3,7 @@ Contributors: happyplugins
 Tags: Themes Delete, Themes Managment, Multiple Themes Delete
 Donate link: http://happyplugins.com
 Requires at least: 3.0.1
-Tested up to: 3.6
+Tested up to: 3.7.1
 Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -62,6 +62,9 @@ You can found more information at: <a href="http://happyplugins.com/delete-multi
 * Update code to display child themes in a better way
 = 1.0.2 =
 * Update code to Wordpress 3.7.1 changes
+= 1.0.4 =
+* Fix CSS layout for RTL languages
+* Clean code and add security tokens
 
 
 
