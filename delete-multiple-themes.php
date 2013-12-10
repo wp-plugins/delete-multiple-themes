@@ -4,7 +4,7 @@ Plugin Name: Delete Multiple Themes
 Plugin URI: http://happyplugins.com
 Description: Add a registration widget for Wishlist Member.
 Author: HappyPlugins
-Version: 1.0.4
+Version: 1.0.5
 Author URI: http://happyplugins.com
 Text Domain: delete-multiple-themes
 */
@@ -100,10 +100,11 @@ class DeleteMultipleThemes
                                     if ($current_theme->stylesheet == $row->stylesheet) {
                                         echo '<br><span style="color:green;">(Current Theme)</span>';
                                     }
-                                    if (in_array($row->name, $parents)) {
-                                        echo '<br><span style="color:orange;">Has Child Themes</span>';
+                                    if (is_array($parents)){
+                                        if (in_array($row->name, $parents)) {
+                                            echo '<br><span style="color:orange;">Has Child Themes</span>';
+                                        }
                                     }
-
                                     ?></td>
                                 <td><?php echo $row->parent_theme; ?></td>
                                 <td><?php echo $row->author; ?></td>
