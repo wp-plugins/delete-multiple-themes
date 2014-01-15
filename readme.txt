@@ -1,7 +1,7 @@
 === Delete Multiple Themes ===
 Contributors: happyplugins
 Tags: Themes Delete, Themes Managment, Multiple Themes Delete
-Donate link: http://happyplugins.com
+Donate link: http://happyplugins.com/downloads/delete-multiple-themes/
 Requires at least: 3.0.1
 Tested up to: 3.7.1
 Stable tag: 1.0.5
@@ -35,7 +35,7 @@ This Plugins is maintained by <a href="http://happyplugins.com">HappyPlugins</a>
 == Screenshots ==
 
 No screenshot available, you can find more information at:
-http://blog.happyplugins.com/delete-multiple-themes
+http://happyplugins.com/downloads/delete-multiple-themes/
 
 
 
@@ -52,7 +52,7 @@ If you have any problem or conflict try to disable the plugin and see if the pro
 
 
 = Where get I get more information about the Delete Multiple Themes? = 
-You can found more information at: <a href="http://blog.happyplugins.com/delete-multiple-themes">HappyPlugin - Delete Multiple Themes</a>
+You can found more information at: <a href="http://happyplugins.com/downloads/delete-multiple-themes/">HappyPlugin - Delete Multiple Themes</a>
 
 
 == Changelog ==
