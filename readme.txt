@@ -28,7 +28,7 @@ If you want to improve your website security  delete all the themes that you are
 
 Our Plugin includes <a href="http://happyplugins.com/?download_category=wishlist-member" alt="Wishlist Member Dedicated Plugins" title="Wishlist Member Dedicated Plugins">Wishlist Member Dedicated Plugins</a>, <a href="http://happyplugins.com/downloads/category/easy-digital-downloads/" alt="Easy Digital Downloads Dedicated Plugins" title="Easy Digital Downloads Dedicated Plugins">Easy Digital Downloads Dedicated Plugins</a><br>
 
-Curreny HappyPlugin company the number one 3rd party plugins developer for the Wishlist Member Membership Platform.
+Curreny HappyPlugins company the number one 3rd party plugins developer for the Wishlist Member Membership Platform.
 
 
 
