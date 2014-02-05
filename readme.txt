@@ -18,17 +18,30 @@ The "Delete Multiple Themes" plugin will enable you to do just that.
 
 You will be able to:
 
-Choose the themes you want to delete
-You will be able see which themes has child themes installed
-As a security measure unnecessary themes may cause security holes.
+<ul>
+<li>Choose the themes you want to delete</li>
+<li>You will be able see which themes has child themes installed</li>
+<l>Improve security by deleting unnecessary themes may cause security holes.<li>
+</ul>
 
 If you want to improve your website security  delete all the themes that you are not using and now you can do it quickly and easily using the "Delete Multiple Themes" plugin.
+
+<h4>HappyPlugins - eCommerce Plugins for WordPress</a>
 
 <a href="http://happyplugins.com">HappyPlugins</a> company develop premium WordPress & Guides for eCommerce websites.<br>
 
 Our Plugin includes <a href="http://happyplugins.com/?download_category=wishlist-member" alt="Wishlist Member Dedicated Plugins" title="Wishlist Member Dedicated Plugins">Wishlist Member Dedicated Plugins</a>, <a href="http://happyplugins.com/downloads/category/easy-digital-downloads/" alt="Easy Digital Downloads Dedicated Plugins" title="Easy Digital Downloads Dedicated Plugins">Easy Digital Downloads Dedicated Plugins</a><br>
 
 Curreny HappyPlugins company the number one 3rd party plugins developer for the Wishlist Member Membership Platform.
+
+<h4>Further Reading</h4>
+
+<ul>
+<li>The <a href="http://happyplugins.com/downloads/delete-multiple-themes/">Delete Multiple Themes</a> official homapge.</li>
+<li>More <a href="http://happyplugins.com">WordPress Plugins</a> by HappyPlugins</li>
+<li>Build a Membership site that Convert with <a href="http://membershipinsiders.com">Membership Isiders</a>.</li>
+<li>Follow HappyPlugins on <a href="https://www.facebook.com/happyplugins">Facebook</a> & <a href="https://twitter.com/HappyPlugins">Twitter</a></li>
+</ul>
 
 
 
