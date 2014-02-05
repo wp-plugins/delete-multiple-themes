@@ -24,7 +24,11 @@ As a security measure unnecessary themes may cause security holes.
 
 If you want to improve your website security  delete all the themes that you are not using and now you can do it quickly and easily using the "Delete Multiple Themes" plugin.
 
-This Plugins is maintained by <a href="http://happyplugins.com">HappyPlugins</a> your can find more plugins and coding tutorials our our websites.<br>
+<a href="http://happyplugins.com">HappyPlugins</a>company develop premium WordPress & Guides for eCommerce websites.<br>
+
+Our Plugin includes <a href="http://happyplugins.com/?download_category=wishlist-member">Wishlist Member Dedicated Plugins</a>, <a href="http://happyplugins.com/downloads/category/easy-digital-downloads/">Easy Digital Downloads Dedicated Plugins</a><br>
+
+Curreny HappyPlugin company the number one 3rd party plugins developer for the Wishlist Member Membership Platform.
 
 
 
