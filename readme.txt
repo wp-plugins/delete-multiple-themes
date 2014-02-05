@@ -21,12 +21,13 @@ You will be able to:
 <ul>
 <li>Choose the themes you want to delete</li>
 <li>You will be able see which themes has child themes installed</li>
-<l>Improve security by deleting unnecessary themes may cause security holes.<li>
+<li>Improve security by deleting unnecessary themes may cause security holes.</li>
 </ul>
 
 If you want to improve your website security  delete all the themes that you are not using and now you can do it quickly and easily using the "Delete Multiple Themes" plugin.
 
-<h4>HappyPlugins - eCommerce Plugins for WordPress</a>
+<h4>HappyPlugins - eCommerce Plugins for WordPress</h4>
+<br>
 
 <a href="http://happyplugins.com">HappyPlugins</a> company develop premium WordPress & Guides for eCommerce websites.<br>
 
@@ -35,7 +36,7 @@ Our Plugin includes <a href="http://happyplugins.com/?download_category=wishlist
 Curreny HappyPlugins company the number one 3rd party plugins developer for the Wishlist Member Membership Platform.
 
 <h4>Further Reading</h4>
-
+<br>
 <ul>
 <li>The <a href="http://happyplugins.com/downloads/delete-multiple-themes/">Delete Multiple Themes</a> official homapge.</li>
 <li>More <a href="http://happyplugins.com">WordPress Plugins</a> by HappyPlugins</li>
