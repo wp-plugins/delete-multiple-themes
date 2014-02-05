@@ -30,19 +30,17 @@ If you want to improve your website security  delete all the themes that you are
 
 <a href="http://happyplugins.com">HappyPlugins</a> company develop premium WordPress & Guides for eCommerce websites.<br>
 
-Our Plugin includes <a href="http://happyplugins.com/?download_category=wishlist-member" alt="Wishlist Member Dedicated Plugins" title="Wishlist Member Dedicated Plugins">Wishlist Member Dedicated Plugins</a>, <a href="http://happyplugins.com/downloads/category/easy-digital-downloads/" alt="Easy Digital Downloads Dedicated Plugins" title="Easy Digital Downloads Dedicated Plugins">Easy Digital Downloads Dedicated Plugins</a><br>
+Our Plugins includes <a href="http://happyplugins.com/?download_category=wishlist-member" alt="Wishlist Member Dedicated Plugins" title="Wishlist Member Dedicated Plugins">Wishlist Member Dedicated Plugins</a>, <a href="http://happyplugins.com/downloads/category/easy-digital-downloads/" alt="Easy Digital Downloads Dedicated Plugins" title="Easy Digital Downloads Dedicated Plugins">Easy Digital Downloads Dedicated Plugins</a><br>
 
-Curreny HappyPlugins company the number one 3rd party plugins developer for the Wishlist Member Membership Platform.
+Currently HappyPlugins company the number one 3rd party plugins developer for the Wishlist Member Membership Platform.
 
 <h4>Further Reading</h4>
 <ul>
-<li>The <a href="http://happyplugins.com/downloads/delete-multiple-themes/">Delete Multiple Themes</a> official homapge.</li>
+<li>The <a href="http://happyplugins.com/downloads/delete-multiple-themes/">Delete Multiple Themes</a> official homepage.</li>
 <li>More <a href="http://happyplugins.com">WordPress Plugins</a> by HappyPlugins</li>
 <li>Build a Membership site that Convert with <a href="http://membershipinsiders.com">Membership Isiders</a>.</li>
 <li>Follow HappyPlugins on <a href="https://www.facebook.com/happyplugins">Facebook</a> & <a href="https://twitter.com/HappyPlugins">Twitter</a></li>
 </ul>
-
-
 
 == Installation ==
 1. Upload the plugin to "wp-content/plugins/" directory.
