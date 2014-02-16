@@ -4,7 +4,7 @@ Tags: Themes Delete, Themes Managment, Multiple Themes Delete
 Donate link: http://happyplugins.com/downloads/delete-multiple-themes/
 Requires at least: 3.0.1
 Tested up to: 3.7.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,10 @@ You can found more information at: <a href="http://happyplugins.com/downloads/de
 * Clean code and add security tokens
 = 1.0.5 =
 * Fix no child theme error case
+= 1.0.6 =
+* Fix WordPress 3.8.1 support
+* Change menu design
+
 
 
 

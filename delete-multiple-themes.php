@@ -50,6 +50,8 @@ class DeleteMultipleThemes
             <h2>Delete Multiple Themes</h2>
             <br>
 
+            <?php require_once(dirname(__FILE__) . '/templates/updates_form.php'); ?>
+
             <div style="width:70%;  float:left;">
                 <p>Choose the themes you want to delete and click on the button to delete them. After you delete the themes you
                     can not restore them so choose your steps carefully.</p>
@@ -126,10 +128,11 @@ class DeleteMultipleThemes
                 </form>
             </div>
 
+
+
             <div style="border: 1px solid #cdcdcd; padding: 18px; width: 25%; float:right;">
-                <a href="http://happyplugins.com" target="_blank"><img
-                        src="<?php echo plugins_url("/images/happyplugins-logo.png", __FILE__); ?>" width="180"/></a>
-                <hr>
+
+
                 <div>
                     <a href="http://store.happyplugins.com"/>
 
@@ -200,6 +203,6 @@ class DeleteMultipleThemes
 
 /* Init DeleteMultipleThemes Class */
 
-    $deleteMultiple = new DeleteMultipleThemes();
+$deleteMultiple = new DeleteMultipleThemes();
 
 ?>
