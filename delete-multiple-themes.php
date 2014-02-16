@@ -2,9 +2,9 @@
 /*
 Plugin Name: Delete Multiple Themes
 Plugin URI: http://happyplugins.com
-Description: Add a registration widget for Wishlist Member.
+Description: Delete Multiple Themes in one click. 
 Author: HappyPlugins
-Version: 1.0.5
+Version: 1.0.6
 Author URI: http://happyplugins.com
 Text Domain: delete-multiple-themes
 */
