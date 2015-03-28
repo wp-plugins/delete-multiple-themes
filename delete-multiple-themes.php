@@ -4,7 +4,7 @@ Plugin Name: Delete Multiple Themes
 Plugin URI: http://happyplugins.com
 Description: Delete Multiple Themes in one click. 
 Author: HappyPlugins
-Version: 1.0.6
+Version: 1.0.7
 Author URI: http://happyplugins.com
 Text Domain: delete-multiple-themes
 */
